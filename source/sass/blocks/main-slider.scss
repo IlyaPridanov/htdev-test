@@ -1,0 +1,144 @@
+.main-slider {
+  position: relative;
+
+  background-color: $primary-color;
+
+  & .swiper-pagination {
+    bottom: 53px;
+    left: 18.1%;
+    transform: translateX(-50%);
+  }
+
+  & .slider-btn {
+    width: $desktop + 245px;
+    padding: 0 20px;
+    max-width: 100%;
+    top: 50.6%;
+  }
+}
+
+.main-slider__item {
+  transform: translateX(-1px);
+  box-sizing: border-box;
+  padding-top: 124px;
+  padding-bottom: 228px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-slider__row {
+  position: relative;
+}
+
+.main-slider__wrapper {
+  @include list-none;
+}
+
+.main-slider__item {
+  transform: translateX(1px);
+}
+
+.main-slider__caption {
+  margin: 0;
+  margin-bottom: 48px;
+  position: relative;
+
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.4;
+
+  color: $accent-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 93px;
+    height: 3px;
+    background-color: $secondary-color;
+  }
+}
+
+.main-slider__text {
+  width: 256px;
+  margin-bottom: 65px;
+
+  font-family: $daxline;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+
+  color: $accent-color;
+}
+
+.main-slider__link {
+  width: 157px;
+  height: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $accent-color;
+  text-decoration: none;
+}
+
+@media(max-width: 1400px) {
+  .main-slider {
+    & .slider-btn {
+      display: none;
+    }
+
+    & .swiper-pagination {
+      bottom: 53px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .main-slider {
+    & .slider-btn {
+      display: none;
+    }
+
+    & .swiper-pagination {
+      bottom: 9px;
+    }
+  }
+
+  .main-slider__item {
+    padding: 54px 0 84px;
+    background-position: 82% 43%;
+
+    transform: translateX(0px);
+  }
+
+  .main-slider__text {
+    margin-bottom: 30px;
+  }
+
+  .main-slider__link,
+  .main-slider__text,
+  .main-slider__caption {
+    position: relative;
+    z-index: 10;
+  }
+
+  .main-slider__blur {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white-opacity;
+  }
+}
+

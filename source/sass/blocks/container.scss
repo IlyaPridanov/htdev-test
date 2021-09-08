@@ -1,0 +1,14 @@
+.container {
+  max-width: 100%;
+  width: $desktop + 40px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &--relative {
+    position: relative;
+  }
+
+  &--off {
+    padding: 0;
+  }
+}

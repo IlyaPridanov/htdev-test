@@ -1,0 +1,172 @@
+.about__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__img-block {
+  & iframe {
+    min-width: 100%;
+  }
+
+  &--page {
+    margin-top: 7px;
+    & img {
+      width: 520px;
+    }
+  }
+}
+
+.about__column {
+  margin-left: 57px;
+
+  &:last-child {
+    margin-left: 28px;
+  }
+
+  &--page {
+    margin-left: 28px;
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+.about__caption {
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.about__list {
+  @include list-none;
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 13px;
+  max-width: 390px;
+
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+  color: $black;
+  letter-spacing: 0.5px;
+
+  &--page {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    max-width: 361px;
+    line-height: 1.3;
+  }
+}
+
+.about__item {
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.35;
+  color: $black;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+
+  &--red {
+    color: $secondary-color;
+  }
+
+  &--page {
+    font-size: 20px;
+    line-height: 1.3;
+    word-spacing: normal;
+    letter-spacing: 0.1px;
+  }
+
+  &--red-circle {
+    max-width: 300px;
+    font-size: 14px;
+    position: relative;
+    margin-left: 42px;
+    margin-bottom: 4px;
+
+    // & span {
+    //   line-height: 1;
+    // }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: -31px;
+      top: 5px;
+      width: 5px;
+      height: 5px;
+
+      border-radius: 50%;
+      background-color: red;
+    }
+  }
+}
+
+@media (max-width:1400px) {
+  .about__column {
+    margin-left: auto;
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width:1250px) {
+  .about__row {
+    justify-content: center;
+  }
+
+  .about__item {
+    font-size: 18px;
+  }
+
+  .about__img-block {
+    margin-bottom: 30px;
+  }
+
+  .about__column {
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width:774px) {
+  .about__row {
+    justify-content: flex-start;
+  }
+
+  .about__caption {
+    margin-bottom: 20px;
+  }
+
+  .about__column {
+    margin-left: 0;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
+  .about__text {
+    max-width: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: $black-light-opacity;
+  }
+
+  .about__item {
+    font-size: 18px;
+  }
+}

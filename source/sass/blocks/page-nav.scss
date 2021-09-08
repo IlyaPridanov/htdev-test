@@ -1,0 +1,48 @@
+.page-nav {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-nav__item {
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.page-nav__link {
+  @include hover();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px 9px;
+
+  font-family: $daxline;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  color: $secondary-color;
+
+  background-color: $accent-color-ultra-middle;
+  border: 1px solid $accent-color-ultra-middle;
+
+  &--active {
+    color: $black;
+
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+
+  &--padding {
+    padding: 12px 22px 9px 26px;
+  }
+}
