@@ -9,7 +9,16 @@
   &:focus,
   &:active {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.6;
     text-decoration: underline;
   }
+}
+
+@mixin font($size , $weight ,$height , $spacing, $color) {
+  font-family: $arial;
+  font-size: $size ;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  color: $color;
 }

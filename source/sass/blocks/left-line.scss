@@ -1,0 +1,18 @@
+.left-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 297px;
+  height: 100%;
+  width: 2px;
+  background-color: #d2c8c8;
+}
+
+@media screen and (max-width:$min-desktop) {
+  .left-line::after {
+    left: 10px;
+    width: 1px;
+  }
+}
