@@ -1,0 +1,31 @@
+.list {
+  @include list();
+
+  & li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: "\2014";
+      @include font(16px,700,1,0,$primary-color);
+    }
+  }
+}
+
+@media screen and (max-width:$tablet) {
+  .list {
+    & li {
+      padding-left: 19px;
+      margin-bottom: 8px;
+
+      &::before {
+        top: 2px;
+        font-size: 13px;
+      }
+    }
+  }
+}
