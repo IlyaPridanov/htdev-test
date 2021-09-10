@@ -126,18 +126,8 @@
 
 @media screen and (max-width:$desktop) {
   .now__img {
-    height: 245px;
+    height: 100%;
     width: 580px;
-  }
-
-  .now__block {
-    padding-top: 134px;
-    padding-bottom: 0;
-
-    &::before {
-      width: 10px;
-      height: 1px;
-    }
   }
 
   .now__caption {
@@ -147,11 +137,6 @@
 
   .now__bottom {
     padding-bottom: 30px;
-
-    &::before {
-      height: 1px;
-      width: calc(100% - 10px);
-    }
   }
 
   .now__list {
@@ -167,6 +152,30 @@
 
   .now__top-list {
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width:$min-desktop) {
+  .now__block {
+    padding-top: 134px;
+    padding-bottom: 0;
+
+    &::before {
+      width: 10px;
+      height: 1px;
+    }
+  }
+
+  .now__img {
+    height: 245px;
+    width: 580px;
+  }
+
+  .now__bottom {
+    &::before {
+      height: 1px;
+      width: calc(100% - 10px);
+    }
   }
 }
 

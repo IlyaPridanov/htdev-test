@@ -1,0 +1,114 @@
+.tenet {
+  margin-bottom: 54px;
+}
+
+.tenet__caption {
+  margin: 0 0 51px 60px;
+}
+
+.tenet__text-caption {
+  margin: 0;
+  padding: 0 23px 18px 0;
+  margin-bottom: 35px;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      to right,
+      $primary-color 0% 1%,
+      rgba(256,256,256,0) 1% 2%,
+      $primary-color 2% 5%,
+      rgba(256,256,256,0) 5% 6%,
+      $primary-color 6% 9%,
+      rgba(256,256,256,0) 9% 10%,
+      $primary-color 10% 20%,
+      rgba(256,256,256,0) 20% 21%,
+      $primary-color 21% 34%,
+      rgba(256,256,256,0) 34% 35%,
+      $primary-color 35% 51%,
+      rgba(256,256,256,0) 51% 52%,
+      $primary-color 52% 79%,
+      rgba(256,256,256,0) 79% 80%,
+      $primary-color 80% 100%
+    );
+  }
+}
+
+.tenet__slider {
+  margin-left: 60px;
+  position: relative;
+}
+
+.tenet__item {
+  padding: 44px 60px 60px 50px;
+  background-color: $white;
+  box-sizing: border-box;
+}
+
+.tenet__btn {
+  @include btn();
+  position: absolute;
+  top: 49px;
+  right: 60px;
+  z-index: 2;
+}
+
+.tenet__pagination {
+  display: none;
+}
+
+@media screen and (max-width:$tablet) {
+  .tenet__caption {
+    margin: 0 19px 26px 20px;
+  }
+
+  .tenet__slider {
+    margin-left: 20px;
+  }
+
+  .tenet__item {
+    padding: 33px 24px 31px 20px;
+  }
+
+  .tenet__text-caption {
+    font-size: 13px;
+    padding-bottom: 15px;
+    margin-bottom: 19px;
+  }
+
+  .tenet__btn {
+    display: none;
+  }
+
+  .tenet__pagination {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    z-index: 2;
+
+    & .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+      vertical-align: middle;
+      margin: 0 4px;
+      background-color: $primary-color;
+      opacity: 1;
+    }
+
+    & .swiper-pagination-bullet-active {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

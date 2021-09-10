@@ -8338,6 +8338,7 @@
 
       return new window.Swiper(container, {
         loop: true,
+        autoHeight: true,
         navigation: {
           nextEl: next,
         },
