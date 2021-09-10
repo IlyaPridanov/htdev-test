@@ -5,3 +5,5 @@
 //= vendor/swiper.js
 
 // Modules
+
+//= modules/getSlider.js

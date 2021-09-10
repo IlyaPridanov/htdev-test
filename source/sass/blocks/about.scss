@@ -55,15 +55,21 @@
   }
 
   .about__img {
-    width: 280px;
-    height: 175px;
+    height: 245px;
+    width: 580px;
   }
 }
 
 @media screen and (max-width:$tablet) {
+  .about__img {
+    width: calc(100% - 20px);
+    height: 175px;
+  }
+
   .about__text-block {
+    margin-right: 20px;
     padding: 35px 20px 31px;
-    width: 280px;
+    width: auto;
 
     & p {
       margin: 0 0 8px;
