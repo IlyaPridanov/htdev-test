@@ -5,6 +5,7 @@
 }
 
 @mixin btn {
+  @include hover();
   padding: 0;
   border: none;
   outline: none;

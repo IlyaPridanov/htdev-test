@@ -1261,6 +1261,10 @@ img {
     cursor: pointer;
     opacity: 0.6;
     text-decoration: underline; }
+  .project__btn:hover, .project__btn:focus, .project__btn:active {
+    cursor: pointer;
+    opacity: 0.6;
+    text-decoration: underline; }
 
 @media screen and (max-width: 1339px) {
   .project__text {
@@ -1570,7 +1574,7 @@ img {
     padding-right: 19px; } }
 
 .tenet {
-  margin-bottom: 54px; }
+  margin-bottom: 34px; }
 
 .tenet__caption {
   margin: 0 0 51px 60px; }
@@ -1593,12 +1597,15 @@ img {
     background: -webkit-gradient(linear, left top, right top, from(#4764b0), color-stop(1%, rgba(255, 255, 255, 0)), color-stop(2%, #4764b0), color-stop(5%, rgba(255, 255, 255, 0)), color-stop(6%, #4764b0), color-stop(9%, rgba(255, 255, 255, 0)), color-stop(10%, #4764b0), color-stop(20%, rgba(255, 255, 255, 0)), color-stop(21%, #4764b0), color-stop(34%, rgba(255, 255, 255, 0)), color-stop(35%, #4764b0), color-stop(51%, rgba(255, 255, 255, 0)), color-stop(52%, #4764b0), color-stop(79%, rgba(255, 255, 255, 0)), color-stop(80%, #4764b0));
     background: linear-gradient(to right, #4764b0 0% 1%, rgba(255, 255, 255, 0) 1% 2%, #4764b0 2% 5%, rgba(255, 255, 255, 0) 5% 6%, #4764b0 6% 9%, rgba(255, 255, 255, 0) 9% 10%, #4764b0 10% 20%, rgba(255, 255, 255, 0) 20% 21%, #4764b0 21% 34%, rgba(255, 255, 255, 0) 34% 35%, #4764b0 35% 51%, rgba(255, 255, 255, 0) 51% 52%, #4764b0 52% 79%, rgba(255, 255, 255, 0) 79% 80%, #4764b0 80% 100%); }
 
+.tenet__text {
+  margin: 0; }
+
 .tenet__slider {
   margin-left: 60px;
   position: relative; }
 
 .tenet__item {
-  padding: 44px 60px 60px 50px;
+  padding: 44px 60px 55px 50px;
   background-color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -1612,17 +1619,29 @@ img {
   top: 49px;
   right: 60px;
   z-index: 2; }
+  .tenet__btn:hover, .tenet__btn:focus, .tenet__btn:active {
+    cursor: pointer;
+    opacity: 0.6;
+    text-decoration: underline; }
 
 .tenet__pagination {
   display: none; }
 
+@media screen and (max-width: 1019px) {
+  .tenet__caption {
+    margin-left: 30px; }
+  .tenet__slider {
+    margin-left: 30px; } }
+
 @media screen and (max-width: 699px) {
+  .tenet {
+    margin-bottom: 32px; }
   .tenet__caption {
     margin: 0 19px 26px 20px; }
   .tenet__slider {
     margin-left: 20px; }
   .tenet__item {
-    padding: 33px 24px 31px 20px; }
+    padding: 33px 24px 43px 20px; }
   .tenet__text-caption {
     font-size: 13px;
     padding-bottom: 15px;
@@ -1635,7 +1654,7 @@ img {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    bottom: 12px;
+    bottom: 20px;
     z-index: 2; }
     .tenet__pagination .swiper-pagination-bullet {
       width: 7px;
@@ -1647,3 +1666,148 @@ img {
     .tenet__pagination .swiper-pagination-bullet-active {
       width: 10px;
       height: 10px; } }
+
+.people {
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 55px; }
+  .people::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 297px;
+    height: 2px;
+    background-color: #d2c8c8; }
+
+.people__caption {
+  margin: 0 10px 52px 330px; }
+
+.people__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.people__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 780px;
+          flex: 0 0 780px;
+  width: 780px;
+  height: 580px;
+  margin-top: 50px; }
+  .people__img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+.people__list {
+  padding: 45px 60px 50px 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 470px;
+          flex: 0 0 470px;
+  width: 470px;
+  background-color: #ffffff; }
+
+.people__pagination {
+  display: none; }
+
+.people__btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  position: absolute;
+  z-index: 2;
+  left: 60px;
+  bottom: 48px; }
+  .people__btn:hover, .people__btn:focus, .people__btn:active {
+    cursor: pointer;
+    opacity: 0.6;
+    text-decoration: underline; }
+
+.people__slider {
+  position: relative; }
+
+@media screen and (max-width: 1339px) {
+  .people__img {
+    width: 530px;
+    -ms-flex-preferred-size: 530px;
+        flex-basis: 530px; }
+    .people__img img {
+      -o-object-position: center;
+         object-position: center; }
+  .people__list {
+    padding: 45px 30px;
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+    width: 400px; } }
+
+@media screen and (max-width: 1019px) {
+  .people::before {
+    width: 10px; }
+  .people__caption {
+    margin-left: 30px; }
+  .people__item {
+    position: relative;
+    display: block;
+    padding-top: 260px; }
+  .people__img {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    height: 300px;
+    width: 580px; }
+  .people__list {
+    position: relative;
+    margin-left: 20px;
+    width: auto; }
+  .people__btn {
+    display: none; }
+  .people__pagination {
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 220px;
+    z-index: 2; }
+    .people__pagination .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+      background-color: #ffffff;
+      margin: 0 4px;
+      opacity: 1;
+      vertical-align: middle; }
+      .people__pagination .swiper-pagination-bullet-active {
+        width: 10px;
+        height: 10px; } }
+
+@media screen and (max-width: 699px) {
+  .people {
+    padding-top: 22px; }
+  .people__item {
+    padding-top: 162px; }
+  .people__img {
+    height: 202px;
+    width: calc(100% - 20px); }
+  .people__list {
+    padding: 29px 19px 23px; }
+  .people__caption {
+    margin-right: 13px;
+    margin-bottom: 27px; }
+  .people__pagination {
+    top: 138px;
+    width: 100%; }
+    .people__pagination .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+      margin: 0 5px; }
+      .people__pagination .swiper-pagination-bullet-active {
+        width: 9px;
+        height: 9px; } }

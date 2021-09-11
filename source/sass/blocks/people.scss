@@ -1,0 +1,179 @@
+.people {
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 55px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 297px;
+    height: 2px;
+    background-color: #d2c8c8;
+  }
+}
+
+.people__caption {
+  margin: 0 10px 52px 330px;
+}
+
+.people__item {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.people__img {
+  flex: 0 0 780px;
+  width: 780px;
+  height: 580px;
+  margin-top: 50px;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.people__list {
+  padding: 45px 60px 50px 50px;
+  flex: 0 0 470px;
+  width: 470px;
+  background-color: $white;
+}
+
+.people__pagination {
+  display: none;
+}
+
+.people__btn {
+  @include btn();
+  position: absolute;
+  z-index: 2;
+  left: 60px;
+  bottom: 48px;
+}
+
+.people__slider {
+  position: relative;
+}
+
+@media screen and (max-width:$desktop) {
+  .people__img {
+    width: 530px;
+    flex-basis: 530px;
+
+    & img {
+      object-position: center;
+    }
+  }
+
+  .people__list {
+    padding: 45px 30px;
+    flex-basis: 400px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:$min-desktop) {
+  .people {
+    &::before {
+      width: 10px;
+    }
+  }
+
+  .people__caption {
+    margin-left: 30px;
+  }
+
+  .people__item {
+    position: relative;
+    display: block;
+    padding-top: 260px;
+  }
+
+  .people__img {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    height: 300px;
+    width: 580px;
+  }
+
+  .people__list {
+    position: relative;
+    margin-left: 20px;
+    width: auto;
+  }
+
+  .people__btn {
+    display: none;
+  }
+
+  .people__pagination {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+    z-index: 2;
+
+    & .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+      background-color: $white;
+      margin: 0 4px;
+      opacity: 1;
+      vertical-align: middle;
+
+      &-active {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:$tablet) {
+  .people {
+    padding-top: 22px;
+  }
+
+  .people__item {
+    padding-top: 162px;
+  }
+
+  .people__img {
+    height: 202px;
+    width: calc(100% - 20px);
+  }
+
+  .people__list {
+    padding: 29px 19px 23px;
+  }
+
+  .people__caption {
+    margin-right: 13px;
+    margin-bottom: 27px;
+  }
+
+  .people__pagination {
+    top: 138px;
+    width: 100%;
+
+    & .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+      margin: 0 5px;
+
+      &-active {
+        width: 9px;
+        height: 9px;
+      }
+    }
+  }
+}

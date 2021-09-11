@@ -1,5 +1,5 @@
 .tenet {
-  margin-bottom: 54px;
+  margin-bottom: 34px;
 }
 
 .tenet__caption {
@@ -43,13 +43,17 @@
   }
 }
 
+.tenet__text {
+  margin: 0;
+}
+
 .tenet__slider {
   margin-left: 60px;
   position: relative;
 }
 
 .tenet__item {
-  padding: 44px 60px 60px 50px;
+  padding: 44px 60px 55px 50px;
   background-color: $white;
   box-sizing: border-box;
 }
@@ -66,7 +70,21 @@
   display: none;
 }
 
+@media screen and (max-width:$min-desktop) {
+  .tenet__caption {
+    margin-left: 30px;
+  }
+
+  .tenet__slider {
+    margin-left: 30px;
+  }
+}
+
 @media screen and (max-width:$tablet) {
+  .tenet {
+    margin-bottom: 32px;
+  }
+
   .tenet__caption {
     margin: 0 19px 26px 20px;
   }
@@ -76,7 +94,7 @@
   }
 
   .tenet__item {
-    padding: 33px 24px 31px 20px;
+    padding: 33px 24px 43px 20px;
   }
 
   .tenet__text-caption {
@@ -94,7 +112,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 12px;
+    bottom: 20px;
     z-index: 2;
 
     & .swiper-pagination-bullet {
